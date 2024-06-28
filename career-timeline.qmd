@@ -1,0 +1,88 @@
+---
+title: "Career Timeline"
+format: html
+css: styles.css
+---
+
+# Career Timeline
+
+<div class="timeline">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <h3>2015</h3>
+          <h4>Junior Developer at Company A</h4>
+          <p>Worked on developing web applications using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <h3>2016</h3>
+          <h4>Mid-Level Developer at Company B</h4>
+          <p>Contributed to the backend development using Node.js and Express.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <h3>2017</h3>
+          <h4>Senior Developer at Company C</h4>
+          <p>Led a team of developers to build scalable web applications.</p>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <h3>2018</h3>
+          <h4>Tech Lead at Company D</h4>
+          <p>Oversaw the technology strategy and architecture for various projects.</p>
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <h3>2019</h3>
+          <h4>Engineering Manager at Company E</h4>
+          <p>Managed a team of engineers and coordinated project deliveries.</p>
+        </div>
+      </div>
+      <!-- Slide 6 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <h3>2020</h3>
+          <h4>Director of Engineering at Company F</h4>
+          <p>Directed engineering efforts and ensured alignment with business goals.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+</script>
