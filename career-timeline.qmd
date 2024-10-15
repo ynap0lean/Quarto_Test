@@ -1,71 +1,193 @@
 ---
-title: "Career Timeline"
-format: html
-css: styles.css
+title: "John Doe"
+subtitle: Engineer
+image-alt: "Smiling, pensive man with dark eyes, glasses, and a short beard wearing a yellow sweater."
+about:
+  template: trestles
+  image-width: 18em
+  image-shape: rounded
+  id: hero-heading
+format: 
+  html: 
+    page-layout: full
+    css: style.css
+    include-after-body:
+      - text: |
+          <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: {
+                  delay: 5000,
+                  disableOnInteraction: false,
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: 1,
+                spaceBetween: 30,
+              });
+            });
+          </script>
+header-includes: >
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/about.css">
+  <link rel="stylesheet" href="../assets/profile.css">
+resources:
+  - ../assets/about.css
+  - ../assets/profile.css
 ---
 
-# Career Timeline
+::: {#hero-heading}
+<div class="h1">Hey, I'm happy you're here</div>
 
-<div class="timeline">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide">
-        <div class="card">
-          <h3>2015</h3>
-          <h4>Junior Developer at Company A</h4>
-          <p>Worked on developing web applications using HTML, CSS, and JavaScript.</p>
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <div class="card">
-          <h3>2016</h3>
-          <h4>Mid-Level Developer at Company B</h4>
-          <p>Contributed to the backend development using Node.js and Express.</p>
-        </div>
-      </div>
-      <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <div class="card">
-          <h3>2017</h3>
-          <h4>Senior Developer at Company C</h4>
-          <p>Led a team of developers to build scalable web applications.</p>
-        </div>
-      </div>
-      <!-- Slide 4 -->
-      <div class="swiper-slide">
-        <div class="card">
-          <h3>2018</h3>
-          <h4>Tech Lead at Company D</h4>
-          <p>Oversaw the technology strategy and architecture for various projects.</p>
-        </div>
-      </div>
-      <!-- Slide 5 -->
-      <div class="swiper-slide">
-        <div class="card">
-          <h3>2019</h3>
-          <h4>Engineering Manager at Company E</h4>
-          <p>Managed a team of engineers and coordinated project deliveries.</p>
-        </div>
-      </div>
-      <!-- Slide 6 -->
-      <div class="swiper-slide">
-        <div class="card">
-          <h3>2020</h3>
-          <h4>Director of Engineering at Company F</h4>
-          <p>Directed engineering efforts and ensured alignment with business goals.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-</div>
+Thanks for stopping by!
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum magna felis, bibendum congue mi tincidunt vel. Morbi non velit ipsum. Mauris ullamcorper mauris nec vestibulum rhoncus. Cras sed libero neque. Aenean libero felis, hendrerit sed sapien sed, imperdiet mattis lorem. Sed semper commodo venenatis. Aliquam ornare finibus nisi eu mollis. Quisque gravida ipsum vitae hendrerit tristique. Vivamus vitae porta neque.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam fringilla quis nunc suscipit ultrices. Quisque malesuada euismod purus eget rhoncus. Fusce odio libero, tempus id scelerisque sed, luctus sed tellus. Maecenas ante purus, malesuada sit amet mauris sed, vestibulum porta purus. Proin at faucibus elit. Vestibulum egestas hendrerit mauris ac mattis. Aenean ut enim commodo, egestas ante vulputate, bibendum nunc. Nam diam ligula, condimentum quis varius in, volutpat id orci. Aenean maximus massa quis nisl molestie posuere. Sed finibus metus sed nisi molestie maximus. Nam pulvinar nisl quis ornare aliquam. Integer eget ex accumsan arcu ultricies lacinia vel et neque.
+
+Etiam interdum nibh et interdum tempor. Proin blandit lorem a elit rhoncus, ac cursus urna scelerisque. Curabitur vel sapien eu dolor gravida dictum vel et est. Suspendisse mattis sit amet est ut tincidunt. Pellentesque congue volutpat sapien et pellentesque. Duis bibendum, metus eu vulputate laoreet, elit ex lacinia risus, id facilisis sapien tellus id erat. In dictum nunc id libero sagittis, a porta lectus suscipit. Vivamus tortor metus, cursus quis maximus in, tincidunt eget elit. Mauris eget fringilla urna. Sed tellus risus, rhoncus ac tristique eget, facilisis sed metus. Etiam ornare bibendum ultricies.
+
+
+:::
+
+## About me
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum magna felis, bibendum congue mi tincidunt vel. Morbi non velit ipsum. Mauris ullamcorper mauris nec vestibulum rhoncus. Cras sed libero neque. Aenean libero felis, hendrerit sed sapien sed, imperdiet mattis lorem. Sed semper commodo venenatis. Aliquam ornare finibus nisi eu mollis. Quisque gravida ipsum vitae hendrerit tristique. Vivamus vitae porta neque.
+
+
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-certificate"></i></span><a href="https://education.rstudio.com/trainers/people/canelon+silvia/">Tidyverse Instructor Certification</a> ∙ RStudio, PBC ∙ 2020</li>
+</ul>
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam fringilla quis nunc suscipit ultrices. Quisque malesuada euismod purus eget rhoncus. Fusce odio libero, tempus id scelerisque sed, luctus sed tellus. Maecenas ante purus, malesuada sit amet mauris sed, vestibulum porta purus. Proin at faucibus elit. Vestibulum egestas hendrerit mauris ac mattis. Aenean ut enim commodo, egestas ante vulputate, bibendum nunc. Nam diam ligula, condimentum quis varius in, volutpat id orci. Aenean maximus massa quis nisl molestie posuere. Sed finibus metus sed nisi molestie maximus. Nam pulvinar nisl quis ornare aliquam. Integer eget ex accumsan arcu ultricies lacinia vel et neque.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-certificate"></i></span><a href="https://www.med.upenn.edu/mbmi/certificate.html">Certificate in Biomedical Informatics</a> ∙ University of Y ∙ 2019</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. in Biomedical Engineering ∙ V University ∙ 2018</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Biomedical Engineering ∙ University of X ∙ 2012</li>
+</ul>
+
+:::
+
+
+:::
+<!-- end grid -->
+
+::: {.swiper-container}
+<style>
+  /* Swiper container styles */
+  .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust based on your design */
+    background-color: #f0f0f0; /* Optional: Background color for better visibility */
+  }
+
+  /* Swiper button styles */
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  /* Pagination styles */
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+</style>
+
+::: {.image-gallery}
+
+::: {.swiper-container}
+:::: {.swiper-wrapper}
+
+:::::: {.swiper-slide}
+![Slide 1 Image](images/slide1.png){style="width: 100%; height: auto;"}
+:::::
+
+:::::: {.swiper-slide}
+![Slide 2 Image](images/slide2.png){style="width: 100%; height: auto;"}
+:::::
+
+:::::: {.swiper-slide}
+![Slide 3 Image](images/slide3.png){style="width: 100%; height: auto;"}
+:::::
+
+:::::: {.swiper-slide}
+![Slide 4 Image](images/slide4.png){style="width: 100%; height: auto;"}
+:::::
+
+:::::: {.swiper-slide}
+![Slide 5 Image](images/slide5.png){style="width: 100%; height: auto;"}
+:::::
+
+:::::: {.swiper-slide}
+![Slide 6 Image](images/slide6.png){style="width: 100%; height: auto;"}
+:::::
+
+::::
+<!-- Swiper Pagination -->
+<div class="swiper-pagination"></div>
+
+<!-- Swiper Navigation Buttons -->
+<div class="swiper-button-next">&#9654;</div> <!-- Right arrow -->
+<div class="swiper-button-prev">&#9664;</div> <!-- Left arrow -->
+:::
+
+<!-- Include Swiper JS and Initialize Swiper -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -83,6 +205,8 @@ css: styles.css
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      slidesPerView: 1,
+      spaceBetween: 30,
     });
   });
 </script>
